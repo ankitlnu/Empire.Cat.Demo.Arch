@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Empire.Infra.Bus\Empire.Infra.Bus.csproj" />
+    <ProjectReference Include="..\Empire.Infra.Core\Empire.Infra.Core.csproj" />
+    <ProjectReference Include="..\Empire.Infra.Data\Empire.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
