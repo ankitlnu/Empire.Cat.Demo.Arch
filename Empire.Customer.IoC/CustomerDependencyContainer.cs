@@ -15,7 +15,7 @@ namespace Empire.Core.IoC
         {
             CoreDependencyContainer.RegisterCoreServices(services);
 
-            services.AddScoped<IRequestHandler<CreateCustomerCommand, bool>, CreateCustomerCommandHandler>();
+            services.AddScoped<IRequestHandler<CreateCustomerCommand, bool>, CustomerCommandHandler>();
 
             services.AddScoped<ICustomerService, CustomerService>();
 

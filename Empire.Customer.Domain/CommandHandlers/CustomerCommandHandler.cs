@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using E=Empire.Customer.Domain.Models;
 namespace Empire.Customer.Domain.CommandHandlers
 {
-    public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerCommand, bool>
+    public class CustomerCommandHandler : IRequestHandler<CreateCustomerCommand, bool>
     {
         private readonly ICustomerRepository customerRepository;
 
-        public CreateCustomerCommandHandler(ICustomerRepository customerRepository)
+        public CustomerCommandHandler(ICustomerRepository customerRepository)
         {
             this.customerRepository = customerRepository;
         }
