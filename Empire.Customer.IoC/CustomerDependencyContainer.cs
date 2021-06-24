@@ -1,10 +1,4 @@
-﻿using Empire.Customer.Application.Interfaces;
-using Empire.Customer.Application.Services;
-using Empire.Customer.Domain.CommandHandlers;
-using Empire.Customer.Domain.Commands;
-using Empire.Customer.Domain.Interfaces;
-using Empire.Customer.Persistence;
-using MediatR;
+﻿using Empire.Customer.IoC.Extentions;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Empire.Core.IoC
@@ -15,11 +9,7 @@ namespace Empire.Core.IoC
         {
             CoreDependencyContainer.RegisterCoreServices(services);
 
-            services.AddScoped<IRequestHandler<CreateCustomerCommand, bool>, CustomerCommandHandler>();
-
-            services.AddScoped<ICustomerService, CustomerService>();
-
-            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.RegisterCustomerServices();
         }
     }
 }

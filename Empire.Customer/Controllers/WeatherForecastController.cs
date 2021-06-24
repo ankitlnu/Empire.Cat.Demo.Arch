@@ -28,15 +28,53 @@ namespace Empire.Customer.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<string>> Get()
+        public async Task<IEnumerable<CustomerDTO>> Get()
         {
-            var result = await customerService.AddCustomer(new CustomerDTO 
+            //Todo : implement auto mapper
+            var customerList = new List<CustomerDTO>();
+
+            var allCustomers= await customerService.GetAllCustomer();
+
+            foreach (var item in allCustomers)
             {
-                Description="Dev 1",
-                Name= "Dev 2"
+                var customerDTO = new CustomerDTO
+                {
+                    Description = item.Description,
+                    Name = item.Name
+                };
+
+                customerList.Add(customerDTO);
+            }
+
+            return customerList;
+        }
+
+
+        [HttpGet("{Id}")]
+        public async Task<CustomerDTO> GetById(int Id)
+        {
+            var customer = await customerService.GetCustomerById(Id);
+
+            var customerDTO = new CustomerDTO
+            {
+                Description = customer.Description,
+                Name = customer.Name
+            };
+
+            return customerDTO;
+        }
+
+
+        [HttpPost]
+        public async Task<IEnumerable<string>> Post()
+        {
+            var result = await customerService.AddCustomer(new CustomerDTO
+            {
+                Description = "Dev 1",
+                Name = "Dev 2"
             });
 
-            return new string[] {"ta","tada","tada" };
+            return new string[] { "ta", "tada", "tada" };
         }
     }
 }
