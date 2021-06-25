@@ -39,18 +39,14 @@ namespace Empire.Customer.Persistence
                 Id
             };
 
-            var result = await repository.DBContext(connection => 
+            return await repository.DBContext(connection => 
             {
-                return connection.QueryAsync<Domain.Models.Customer>(
+                return connection.QueryFirstOrDefaultAsync<Domain.Models.Customer>(
                     "dbo.iff_GetDummyCustomerById",
                       param:parameter,
-                      null,
-                      null,
                       commandType:System.Data.CommandType.StoredProcedure
                     );
             });
-
-            return result?.FirstOrDefault();
         }
     }
 }

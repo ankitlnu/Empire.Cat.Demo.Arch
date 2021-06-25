@@ -7,21 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Empire.Core", "Empire.Core"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Empire.Customer", "Empire.Customer", "{C222654C-96D2-4D3B-8968-480934A27CC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Infra.Core", "Empire.Infra.Core\Empire.Infra.Core.csproj", "{DD0E0F80-C560-4C9D-B5A1-97DF41EFE6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Infra.Core", "Empire.Infra.Core\Empire.Infra.Core.csproj", "{DD0E0F80-C560-4C9D-B5A1-97DF41EFE6DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Infra.Bus", "Empire.Infra.Bus\Empire.Infra.Bus.csproj", "{C7C7AFF8-BF22-485F-B07B-06F514DB24E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Infra.Bus", "Empire.Infra.Bus\Empire.Infra.Bus.csproj", "{C7C7AFF8-BF22-485F-B07B-06F514DB24E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Infra.Data", "Empire.Infra.Data\Empire.Infra.Data.csproj", "{582CAC30-F0E6-4DFF-93C7-C0D74175D1FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Infra.Data", "Empire.Infra.Data\Empire.Infra.Data.csproj", "{582CAC30-F0E6-4DFF-93C7-C0D74175D1FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Core.IoC", "Empire.Core.IoC\Empire.Core.IoC.csproj", "{B952A4C5-1FCF-45CA-8C87-5F4FCFE8BCE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Core.IoC", "Empire.Core.IoC\Empire.Core.IoC.csproj", "{B952A4C5-1FCF-45CA-8C87-5F4FCFE8BCE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Core.Logging", "Empire.Core.Logging\Empire.Core.Logging.csproj", "{A2B9DE3F-D9FD-4275-AE80-9A8C0C4E96C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Core.Logging", "Empire.Core.Logging\Empire.Core.Logging.csproj", "{A2B9DE3F-D9FD-4275-AE80-9A8C0C4E96C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastrucure", "Infrastrucure", "{74DD5F85-C66D-43E1-B1D6-F378E1B6F543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer.Cache", "Empire.Customer.Cache\Empire.Customer.Cache.csproj", "{6D568099-282F-474A-BAA5-F11DCD2CBAF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer.Cache", "Empire.Customer.Cache\Empire.Customer.Cache.csproj", "{6D568099-282F-474A-BAA5-F11DCD2CBAF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer.Persistence", "Empire.Customer.Persistence\Empire.Customer.Persistence.csproj", "{0EED78A6-9DB4-4EF5-9667-43757AA06EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer.Persistence", "Empire.Customer.Persistence\Empire.Customer.Persistence.csproj", "{0EED78A6-9DB4-4EF5-9667-43757AA06EAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3A1A3B78-B839-4743-8E8A-CF03393345F2}"
 EndProject
@@ -29,19 +29,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{3C6AD1D6-8434-4DD4-B88E-733DCF2778B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Core.Domain", "Empire.Core.Domain\Empire.Core.Domain.csproj", "{D05374F3-4CA3-42BF-AB31-5B1A55246647}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Core.Domain", "Empire.Core.Domain\Empire.Core.Domain.csproj", "{D05374F3-4CA3-42BF-AB31-5B1A55246647}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer.Domain", "Empire.Customer.Domain\Empire.Customer.Domain.csproj", "{56F56FD8-37C8-4E03-849C-7048A576803D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer.Domain", "Empire.Customer.Domain\Empire.Customer.Domain.csproj", "{56F56FD8-37C8-4E03-849C-7048A576803D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer.Application", "Empire.Customer.Application\Empire.Customer.Application.csproj", "{1B20A721-5B57-4F66-8AF4-69CFF2589C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer.Application", "Empire.Customer.Application\Empire.Customer.Application.csproj", "{1B20A721-5B57-4F66-8AF4-69CFF2589C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer", "Empire.Customer\Empire.Customer.csproj", "{B349B37F-1618-4BDD-A9D0-5CB9D14881C5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Empire.Inventory", "Empire.Inventory", "{5A8A4D83-1332-4BDA-BCE4-64F3212FF1E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer", "Empire.Customer\Empire.Customer.csproj", "{B349B37F-1618-4BDD-A9D0-5CB9D14881C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{EFC89782-6375-45C2-9205-9ACCF0711BA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empire.Customer.IoC", "Empire.Customer.IoC\Empire.Customer.IoC.csproj", "{F58FA281-B2BD-41A5-9112-0A34967086FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empire.Customer.IoC", "Empire.Customer.IoC\Empire.Customer.IoC.csproj", "{F58FA281-B2BD-41A5-9112-0A34967086FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

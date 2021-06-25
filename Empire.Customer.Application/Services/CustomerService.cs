@@ -15,7 +15,7 @@ namespace Empire.Customer.Application.Services
         public CustomerService(IMediatorHandler bus)
         {   
             this.bus = bus;
-        }
+        } 
 
         public Task<bool> AddCustomer(CustomerDTO customer)
         {
