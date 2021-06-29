@@ -8,4 +8,9 @@
     <ProjectReference Include="..\Empire.Infra.Core\Empire.Infra.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Enums\" />
+    <Folder Include="Adapters\" />
+  </ItemGroup>
+
 </Project>
